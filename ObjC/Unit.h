@@ -13,8 +13,13 @@
 
 @property(nonatomic, assign) CGFloat value;
 
-- (NSString *)unitFormatted;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithValue:(CGFloat)value;
+
+- (NSString *)unit;
 - (NSString *)formatted;
 - (NSString *)formattedWithPrecision:(NSUInteger)precision;
+
++ (instancetype)value:(CGFloat)value;
 
 @end

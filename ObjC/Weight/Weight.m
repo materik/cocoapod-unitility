@@ -21,9 +21,8 @@ static NSString *const kUnitPounds = @"lb";
 @implementation Weight
 
 - (instancetype)initWithValue:(CGFloat)value unit:(WeightUnit)unit {
-    self = [super init];
+    self = [super initWithValue:value];
     if (self) {
-        [self setValue:value];
         _unit = unit;
     }
     return self;

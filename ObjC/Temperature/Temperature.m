@@ -18,9 +18,8 @@ static NSString *const kUnitKelvin = @"K";
 @implementation Temperature
 
 - (instancetype)initWithValue:(CGFloat)value unit:(TemperatureUnit)unit {
-    self = [super init];
+    self = [super initWithValue:value];
     if (self) {
-        [self setValue:value];
         _unit = unit;
     }
     return self;
