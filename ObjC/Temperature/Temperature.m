@@ -8,10 +8,6 @@
 
 #import "Temperature.h"
 
-static CGFloat const kConstantFarenheit = 32.0;
-static CGFloat const kConstantKelvin = 273.15;
-static CGFloat const kFactorFarenheit = 1.8;
-
 @implementation Temperature
 
 + (Celcius *)celcius:(CGFloat)c {

@@ -88,7 +88,7 @@ static CGFloat const kAccuracy = 0.01f;
     XCTAssertEqualWithAccuracy(g.value, 997.91, kAccuracy);
     [lb setValue:2200];
     g = [lb convertToGram];
-    XCTAssertEqualWithAccuracy(g.value, 997902.42, kAccuracy);
+    XCTAssertEqualWithAccuracy(g.value, 997902.43, kAccuracy);
 }
 
 @end
