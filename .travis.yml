@@ -7,8 +7,10 @@ before_install:
   - export LANG=en_US.UTF-8
   - brew update
 install:
+  - cd SwiftTests && pod install && cd ..
   - cd ObjCTests && pod install && cd ..
 env:
+  - TEST_SUITE=SwiftTests
   - TEST_SUITE=ObjCTests
 script:
   - xctool
