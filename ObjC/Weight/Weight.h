@@ -6,26 +6,14 @@
 //
 //
 
-#import "Unit.h"
+#import "Gram.h"
+#import "Kilogram.h"
+#import "Pound.h"
 
-typedef NS_ENUM(NSUInteger, WeightUnit) {
-    WeightUnitKilogram = 0,
-    WeightUnitGram,
-    WeightUnitPounds,
-};
+@interface Weight : NSObject
 
-@interface Weight : Unit
-
-@property(nonatomic, readonly) WeightUnit unit;
-
-- (instancetype)init NS_UNAVAILABLE;
-
-- (void)convertToGram;
-- (void)convertToKilogram;
-- (void)convertToPounds;
-
-+ (Weight *)gram:(CGFloat)g;
-+ (Weight *)kilogram:(CGFloat)kg;
-+ (Weight *)pounds:(CGFloat)lb;
++ (Gram *)gram:(CGFloat)g;
++ (Kilogram *)kilogram:(CGFloat)kg;
++ (Pound *)Pound:(CGFloat)lb;
 
 @end

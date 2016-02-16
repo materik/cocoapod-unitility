@@ -15,11 +15,6 @@
 
 @implementation Length
 
-- (NSString *)unit {
-    NSAssert(false, @"need to be implemented by subclass");
-    return nil;
-}
-
 + (Centimeter *)centimeter:(CGFloat)cm {
     return [Centimeter value:cm];
 }
