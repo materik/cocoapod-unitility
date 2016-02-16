@@ -12,10 +12,30 @@ different measurements.
 ## Install
 
 ```bash
-pod install 'Unitility'
+pod 'Unitility'
+```
+
+## Swift (Default)
+
+```bash
+pod 'Unitility/Swift'
+```
+
+## Objective-C
+
+```bash
+pod 'Unitility/ObjC'
 ```
 
 ## Example
+
+```swift
+import Unitility
+
+let m = Meter(5.2)
+let f = m.convertToFoot()
+print(f.formatted()) // 17.06 ft
+```
 
 ```objective-c
 #import <Unitility/Length.h>
