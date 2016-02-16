@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Meter: Unit, LengthProtocol {
+public class Meter: Unit, Length {
     
     override var unit: String { return "m" }
     

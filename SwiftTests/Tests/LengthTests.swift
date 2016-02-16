@@ -17,12 +17,10 @@ class UIViewTests: XCTestCase {
     // MARK: format
     
     func testFormatCentimeter() {
-        XCTAssertEqual(Length.centimeter(2.2).formatted(), "2.20 cm")
         XCTAssertEqual(Centimeter(2.2).formatted(), "2.20 cm")
     }
     
     func testFormatMeter() {
-        XCTAssertEqual(Length.meter(2.2).formatted(), "2.20 m")
         XCTAssertEqual(Meter(2.2).formatted(), "2.20 m")
     }
     

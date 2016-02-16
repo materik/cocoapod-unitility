@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Centimeter: Unit, LengthProtocol {
+public class Centimeter: Unit, Length {
     
     override var unit: String { return "cm" }
     
