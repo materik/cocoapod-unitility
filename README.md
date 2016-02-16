@@ -1,5 +1,11 @@
 # Unitility
 
+[![](https://img.shields.io/badge/contact-@thematerik-blue.svg?style=flat-square)](http://twitter.com/thematerik)
+[![](https://img.shields.io/cocoapods/v/Unitility.svg?style=flat-square)](https://cocoapods.org/pods/Unitility)
+[![](https://img.shields.io/travis/materik/unitility.svg?style=flat-square)](https://travis-ci.org/materik/unitility)
+![](https://img.shields.io/cocoapods/p/Unitility.svg?style=flat-square)
+![](https://img.shields.io/cocoapods/l/Unitility.svg?style=flat-square)
+
 Easy to use and understand pod for storing, formatting and converting units of
 different measurements.
 
