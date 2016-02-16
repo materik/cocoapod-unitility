@@ -1,4 +1,4 @@
-# Unitility
+![](logo.png)
 
 [![](https://img.shields.io/badge/contact-@thematerik-blue.svg?style=flat-square)](http://twitter.com/thematerik)
 [![](https://img.shields.io/cocoapods/v/Unitility.svg?style=flat-square)](https://cocoapods.org/pods/Unitility)
