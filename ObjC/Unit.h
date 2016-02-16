@@ -14,7 +14,6 @@
 @property(nonatomic, assign) CGFloat value;
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithValue:(CGFloat)value;
 
 - (NSString *)unit;
 - (NSString *)formatted;
