@@ -1,0 +1,18 @@
+language: objective-c
+osx_image: xcode7
+branches:
+  only:
+    - master
+before_install:
+  - export LANG=en_US.UTF-8
+  - brew update
+install:
+  - cd ObjCTests && pod install && cd ..
+env:
+  - TEST_SUITE=ObjCTests
+script:
+  - xctool
+    -workspace ${TEST_SUITE}/${TEST_SUITE}.xcworkspace
+    -scheme Tests
+    -sdk iphonesimulator9.0
+    clean build-tests run-tests
