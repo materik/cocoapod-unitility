@@ -45,23 +45,28 @@ Foot *f = [m convertToFoot];
 NSLog(@"%@", [f formatted]); // 17.06 ft
 ```
 
-## Units
+## Supported Units
 
 ### Length
 
 - Centimeter
-- Foot
-- Inch
+- Foot (*working on Swift support*)
+- Inch (*working on Swift support*)
 - Meter
 
-### Temperature
+### Temperature (*working on Swift support*)
 
 - Celcius
 - Farenheit
 - Kelvin
 
-### Weight
+### Weight (*working on Swift support*)
 
 - Gram
 - Kilogram
 - Pound
+
+## Notes
+
+- Working on adding more units and measurements
+- Accepting Issues and Pull Requests
