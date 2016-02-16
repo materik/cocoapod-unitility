@@ -6,26 +6,16 @@
 //
 //
 
-#import "Unit.h"
+#import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, TemperatureUnit) {
-    TemperatureUnitKelvin = 0,
-    TemperatureUnitCelcius,
-    TemperatureUnitFarenheit,
-};
+#import "Celcius.h"
+#import "Farenheit.h"
+#import "Kelvin.h"
 
-@interface Temperature : Unit
+@interface Temperature : NSObject
 
-@property(nonatomic, readonly) TemperatureUnit unit;
-
-- (instancetype)init NS_UNAVAILABLE;
-
-- (void)convertToCelcius;
-- (void)convertToFarenheit;
-- (void)convertToKelvin;
-
-+ (Temperature *)celcius:(CGFloat)c;
-+ (Temperature *)farenheit:(CGFloat)f;
-+ (Temperature *)kelvin:(CGFloat)k;
++ (Celcius *)celcius:(CGFloat)c;
++ (Farenheit *)farenheit:(CGFloat)f;
++ (Kelvin *)kelvin:(CGFloat)k;
 
 @end

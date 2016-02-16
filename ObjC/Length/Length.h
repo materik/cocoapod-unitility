@@ -6,6 +6,8 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
 #import "Centimeter.h"
 #import "Foot.h"
 #import "Inch.h"

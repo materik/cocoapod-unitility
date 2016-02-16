@@ -20,17 +20,26 @@ static CGFloat const kAccuracy = 0.01f;
 #pragma mark - Format
 
 - (void)testFormatCelcius {
-    XCTAssertEqualObjects([[Temperature celcius:2.2] formatted], @"2.2°C");
+    XCTAssertEqualObjects([[Temperature celcius:2.2] formatted], @"2.20 °C");
 }
 
 - (void)testFormatFarenheit {
-    XCTAssertEqualObjects([[Temperature farenheit:2.2] formatted], @"2.2°F");
+    XCTAssertEqualObjects([[Temperature farenheit:2.2] formatted], @"2.20 °F");
 }
 
 - (void)testFormatKelvin {
-    XCTAssertEqualObjects([[Temperature kelvin:2.2] formatted], @"2.2K");
+    XCTAssertEqualObjects([[Temperature kelvin:2.2] formatted], @"2.20 K");
 }
 
 #pragma mark - Convert
+
+- (void)testConvertCelciusToFarenheit {
+    Celcius *c = [Temperature celcius:2.2];
+    Farenheit *f = [c convertToFarenheit];
+    XCTAssertEqualWithAccuracy(f.value, 35.96, kAccuracy);
+    [c setValue:100];
+    f = [c convertToFarenheit];
+    XCTAssertEqualWithAccuracy(f.value, 212, kAccuracy);
+}
 
 @end

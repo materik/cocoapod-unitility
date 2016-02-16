@@ -6,6 +6,8 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
 #import "Gram.h"
 #import "Kilogram.h"
 #import "Pound.h"
