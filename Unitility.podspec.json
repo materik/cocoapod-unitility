@@ -1,7 +1,7 @@
 {
-  "name": "Unit",
+  "name": "Unitility",
   "version": "0.1.0",
-  "homepage": "https://github.com/materik/unit.git",
+  "homepage": "https://github.com/materik/unitility.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE.md"
@@ -13,7 +13,7 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/materik/tableviewdatasourcedesignpattern.git",
+    "git": "https://github.com/materik/unitility.git",
     "tag": "0.1.0"
   },
   "exclude_files": [
@@ -27,7 +27,7 @@
   "subspecs": [
     {
       "name": "Swift",
-      "source_files": "Swift/*.swift"
+      "source_files": "Swift/**/*.swift"
     },
     {
       "name": "ObjC",
