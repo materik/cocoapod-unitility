@@ -7,6 +7,7 @@
 //
 
 #import "Kilogram.h"
+#import "Weight.h"
 
 #import "Gram.h"
 #import "Ounce.h"

@@ -2,7 +2,7 @@
 //  Weight.h
 //  Pods
 //
-//  Created by materik on 10/02/16.
+//  Created by materik on 16/02/16.
 //
 //
 
@@ -13,11 +13,11 @@
 #import "Ounce.h"
 #import "Pound.h"
 
-@interface Weight : NSObject
+@protocol Weight <NSObject>
 
-+ (Gram *)gram:(float)g;
-+ (Kilogram *)kilogram:(float)kg;
-+ (Ounce *)ounce:(float)oz;
-+ (Pound *)pound:(float)lb;
+- (Gram *)convertToGrams;
+- (Kilogram *)convertToKilograms;
+- (Ounce *)convertToOunces;
+- (Pound *)convertToPounds;
 
 @end

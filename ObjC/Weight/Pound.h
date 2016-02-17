@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "WeightProtocol.h"
+@protocol Weight;
 
-@interface Pound : Unit <WeightProtocol>
+@interface Pound : Unit <Weight>
 
 @end

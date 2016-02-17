@@ -20,29 +20,28 @@ static float const kAccuracy = 0.01f;
 #pragma mark - Format
 
 - (void)testFormatGram {
-    XCTAssertEqualObjects([[Weight gram:2.2] formatted], @"2.20 g");
     XCTAssertEqualObjects([[Gram value:2.2] formatted], @"2.20 g");
 }
 
 - (void)testFormatKilogram {
-    XCTAssertEqualObjects([[Weight kilogram:2.2] formatted], @"2.20 kg");
-    XCTAssertEqualObjects([[Weight kilogram:3.333] formatted], @"3.33 kg");
-    XCTAssertEqualObjects([[Weight kilogram:0.12345] formattedWithPrecision:0], @"0 kg");
-    XCTAssertEqualObjects([[Weight kilogram:0.12345] formattedWithPrecision:5], @"0.12345 kg");
+    XCTAssertEqualObjects([[Kilogram value:2.2] formatted], @"2.20 kg");
+    XCTAssertEqualObjects([[Kilogram value:3.333] formatted], @"3.33 kg");
+    XCTAssertEqualObjects([[Kilogram value:0.12345] formattedWithPrecision:0], @"0 kg");
+    XCTAssertEqualObjects([[Kilogram value:0.12345] formattedWithPrecision:5], @"0.12345 kg");
 }
 
 - (void)testFormatOunce {
-    XCTAssertEqualObjects([[Weight ounce:2.2] formatted], @"2.20 oz");
+    XCTAssertEqualObjects([[Ounce value:2.2] formatted], @"2.20 oz");
 }
 
 - (void)testFormatPound {
-    XCTAssertEqualObjects([[Weight pound:2.2] formatted], @"2.20 lb");
+    XCTAssertEqualObjects([[Pound value:2.2] formatted], @"2.20 lb");
 }
 
 #pragma mark - Convert
 
 - (void)testConvertGramToKilogram {
-    Gram *g = [Weight gram:2.2];
+    Gram *g = [Gram value:2.2];
     Kilogram *kg = [g convertToKilograms];
     XCTAssertEqualWithAccuracy(kg.value, 0.0022, 0.0001f);
     [g setValue:2200];
@@ -51,7 +50,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertGramToPound {
-    Gram *g = [Weight gram:2.2];
+    Gram *g = [Gram value:2.2];
     Pound *lb = [g convertToPounds];
     XCTAssertEqualWithAccuracy(lb.value, 0.0048, 0.0001f);
     [g setValue:2200];
@@ -60,7 +59,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertKilogramToGram {
-    Kilogram *kg = [Weight kilogram:2.2];
+    Kilogram *kg = [Kilogram value:2.2];
     Gram *g = [kg convertToGrams];
     XCTAssertEqualWithAccuracy(g.value, 2200, 1.0f);
     [kg setValue:2200];
@@ -69,7 +68,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertKilogramToPound {
-    Kilogram *kg = [Weight kilogram:2.2];
+    Kilogram *kg = [Kilogram value:2.2];
     Pound *lb = [kg convertToPounds];
     XCTAssertEqualWithAccuracy(lb.value, 4.85, kAccuracy);
     [kg setValue:2200];
@@ -78,7 +77,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertPoundToKilogram {
-    Pound *lb = [Weight pound:2.2];
+    Pound *lb = [Pound value:2.2];
     Kilogram *kg = [lb convertToKilograms];
     XCTAssertEqualWithAccuracy(kg.value, 1.00, kAccuracy);
     [lb setValue:2200];
@@ -87,7 +86,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertPoundToGram {
-    Pound *lb = [Weight pound:2.2];
+    Pound *lb = [Pound value:2.2];
     Gram *g = [lb convertToGrams];
     XCTAssertEqualWithAccuracy(g.value, 997.91, kAccuracy);
     [lb setValue:2200];
@@ -96,7 +95,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertPoundToOunce {
-    Pound *lb = [Weight pound:2.2];
+    Pound *lb = [Pound value:2.2];
     Ounce *oz = [lb convertToOunces];
     XCTAssertEqualWithAccuracy(oz.value, 35.2, kAccuracy);
     [lb setValue:2200];
