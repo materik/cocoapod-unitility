@@ -6,8 +6,9 @@
 //
 //
 
-#import "Length.h"
 #import "Unit.h"
+
+#import "LengthProtocol.h"
 
 @interface Centimeter : Unit <Length>
 

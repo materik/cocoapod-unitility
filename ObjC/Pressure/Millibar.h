@@ -6,8 +6,9 @@
 //
 //
 
-#import "Pressure.h"
 #import "Unit.h"
+
+#import "PressureProtocol.h"
 
 @interface Millibar : Unit <Pressure>
 

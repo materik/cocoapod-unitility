@@ -7,7 +7,8 @@
 //
 
 #import "Unit.h"
-#import "Weight.h"
+
+#import "WeightProtocol.h"
 
 @interface Kilogram : Unit <Weight>
 

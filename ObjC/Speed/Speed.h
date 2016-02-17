@@ -1,21 +1,12 @@
 //
-//  Speed.h
+//  UnitilitySpeed.h
 //  Pods
 //
 //  Created by materik on 17/02/16.
 //
 //
 
-#import <Foundation/Foundation.h>
-
-@class KilometerPerHour, Knot, MeterPerSecond, MilePerHour;
-
-@protocol Speed <NSObject>
-
-@required
-- (KilometerPerHour *)convertToKilometersPerHour;
-- (Knot *)convertToKnots;
-- (MeterPerSecond *)convertToMetersPerSecond;
-- (MilePerHour *)convertToMilesPerHour;
-
-@end
+#import "KilometerPerHour.h"
+#import "Knot.h"
+#import "MeterPerSecond.h"
+#import "MilePerHour.h"
