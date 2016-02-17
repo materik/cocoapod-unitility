@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Centimeter.h"
-#import "Foot.h"
-#import "Inch.h"
-#import "Meter.h"
+@class Centimeter, Foot, Inch, Meter;
 
 @protocol Length <NSObject>
 

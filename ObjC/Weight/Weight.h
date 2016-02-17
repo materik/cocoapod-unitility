@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Gram.h"
-#import "Kilogram.h"
-#import "Ounce.h"
-#import "Pound.h"
+@class Gram, Kilogram, Ounce, Pound;
 
 @protocol Weight <NSObject>
 
+@required
 - (Gram *)convertToGrams;
 - (Kilogram *)convertToKilograms;
 - (Ounce *)convertToOunces;

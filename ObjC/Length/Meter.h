@@ -8,7 +8,8 @@
 
 #import "Unit.h"
 
-@protocol Length;
+@protocol Length <NSObject>
+@end
 
 @interface Meter : Unit <Length>
 

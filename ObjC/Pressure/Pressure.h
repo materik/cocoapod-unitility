@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Millibar.h"
-#import "Pascal.h"
+@class Millibar, Pascal;
 
 @protocol Pressure <NSObject>
 

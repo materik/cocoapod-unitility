@@ -6,9 +6,8 @@
 //
 //
 
+#import "Temperature.h"
 #import "Unit.h"
-
-@protocol Temperature;
 
 @interface Farenheit : Unit <Temperature>
 

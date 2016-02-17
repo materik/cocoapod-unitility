@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Celcius.h"
-#import "Farenheit.h"
-#import "Kelvin.h"
+@class Celcius, Farenheit, Kelvin;
 
 @protocol Temperature <NSObject>
 
+@required
 - (Celcius *)convertToCelcius;
 - (Farenheit *)convertToFarenheit;
 - (Kelvin *)convertToKelvin;

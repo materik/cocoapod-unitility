@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "KilometerPerHour.h"
-#import "Knot.h"
-#import "MeterPerSecond.h"
-#import "MilePerHour.h"
+@class KilometerPerHour, Knot, MeterPerSecond, MilePerHour;
 
 @protocol Speed <NSObject>
 
+@required
 - (KilometerPerHour *)convertToKilometersPerHour;
 - (Knot *)convertToKnots;
 - (MeterPerSecond *)convertToMetersPerSecond;

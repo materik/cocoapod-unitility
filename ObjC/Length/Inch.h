@@ -6,9 +6,8 @@
 //
 //
 
+#import "Length.h"
 #import "Unit.h"
-
-@protocol Length;
 
 @interface Inch : Unit <Length>
 
