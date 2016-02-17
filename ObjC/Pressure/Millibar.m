@@ -7,7 +7,6 @@
 //
 
 #import "Millibar.h"
-#import "Pressure.h"
 
 #import "Pascal.h"
 

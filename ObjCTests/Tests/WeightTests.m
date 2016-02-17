@@ -6,7 +6,7 @@
 //
 //
 
-#import <Unitility/Weight.h>
+#import <Unitility/UnitilityWeight.h>
 #import <XCTest/XCTest.h>
 
 static float const kAccuracy = 0.01f;

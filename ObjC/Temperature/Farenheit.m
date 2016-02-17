@@ -7,7 +7,6 @@
 //
 
 #import "Farenheit.h"
-#import "Temperature.h"
 
 #import "Celcius.h"
 #import "Kelvin.h"

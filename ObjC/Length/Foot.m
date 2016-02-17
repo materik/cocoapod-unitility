@@ -7,7 +7,6 @@
 //
 
 #import "Foot.h"
-#import "Length.h"
 
 #import "Centimeter.h"
 #import "Inch.h"
