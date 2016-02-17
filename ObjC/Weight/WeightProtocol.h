@@ -12,9 +12,9 @@
 
 @protocol WeightProtocol <NSObject>
 
-- (Gram *)convertToGram;
-- (Kilogram *)convertToKilogram;
-- (Ounce *)convertToOunce;
-- (Pound *)convertToPound;
+- (Gram *)convertToGrams;
+- (Kilogram *)convertToKilograms;
+- (Ounce *)convertToOunces;
+- (Pound *)convertToPounds;
 
 @end

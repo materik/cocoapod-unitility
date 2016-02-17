@@ -18,19 +18,19 @@
     return @"oz";
 }
 
-- (Gram *)convertToGram {
+- (Gram *)convertToGrams {
     return [Gram value:self.value * 28.3495f];
 }
 
-- (Kilogram *)convertToKilogram {
+- (Kilogram *)convertToKilograms {
     return [Kilogram value:self.value * 0.0283495f];
 }
 
-- (Ounce *)convertToOunce {
+- (Ounce *)convertToOunces {
     return [Ounce value:self.value];
 }
 
-- (Pound *)convertToPound {
+- (Pound *)convertToPounds {
     return [Pound value:self.value * 0.0625f];
 }
 
