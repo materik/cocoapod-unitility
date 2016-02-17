@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "PressureProtocol.h"
+@protocol Pressure;
 
-@interface Millibar : Unit <PressureProtocol>
+@interface Millibar : Unit <Pressure>
 
 @end

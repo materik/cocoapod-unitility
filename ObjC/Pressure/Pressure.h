@@ -1,5 +1,5 @@
 //
-//  Pressure.h
+//  PressureProtocol.h
 //  Pods
 //
 //  Created by materik on 17/02/16.
@@ -11,9 +11,10 @@
 #import "Millibar.h"
 #import "Pascal.h"
 
-@interface Pressure : NSObject
+@protocol Pressure <NSObject>
 
-+ (Millibar *)millibar:(float)mbar;
-+ (Pascal *)pascal:(float)pa;
+@required
+- (Millibar *)convertToMillibars;
+- (Pascal *)convertToPascals;
 
 @end

@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "PressureProtocol.h"
+@protocol Pressure;
 
-@interface Pascal : Unit <PressureProtocol>
+@interface Pascal : Unit <Pressure>
 
 @end
