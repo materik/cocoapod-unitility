@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		118CE946E2E46AF975F2FE8F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B247F5A3457F8A10B06C6007 /* libPods.a */; };
+		C16D94401C749C8700FE23B7 /* SpeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D943F1C749C8700FE23B7 /* SpeedTests.m */; };
 		C17C4EDB1C3D4B8900E7FF4B /* WeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C4EDA1C3D4B8900E7FF4B /* WeightTests.m */; };
 		C19A0F991C6B8A490011D91F /* LengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19A0F981C6B8A490011D91F /* LengthTests.m */; };
 		C19A0F9E1C6B9B1F0011D91F /* TemperatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19A0F9D1C6B9B1F0011D91F /* TemperatureTests.m */; };
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		99C4D664D15A2410AA011339 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B247F5A3457F8A10B06C6007 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16D943F1C749C8700FE23B7 /* SpeedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedTests.m; sourceTree = "<group>"; };
 		C17C4ED11C3D4B2600E7FF4B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17C4ED61C3D4B2600E7FF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17C4EDA1C3D4B8900E7FF4B /* WeightTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightTests.m; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C19A0F981C6B8A490011D91F /* LengthTests.m */,
+				C16D943F1C749C8700FE23B7 /* SpeedTests.m */,
 				C19A0F9D1C6B9B1F0011D91F /* TemperatureTests.m */,
 				C17C4EDA1C3D4B8900E7FF4B /* WeightTests.m */,
 				C17C4ED61C3D4B2600E7FF4B /* Info.plist */,
@@ -201,6 +204,7 @@
 				C17C4EDB1C3D4B8900E7FF4B /* WeightTests.m in Sources */,
 				C19A0F9E1C6B9B1F0011D91F /* TemperatureTests.m in Sources */,
 				C19A0F991C6B8A490011D91F /* LengthTests.m in Sources */,
+				C16D94401C749C8700FE23B7 /* SpeedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,6 +54,13 @@ NSLog(@"%@", [f formatted]); // 17.06 ft
 - Inch (*working on Swift support*)
 - Meter
 
+### Speed  (*working on Swift support*)
+
+- Kilometer/Hour
+- Knot
+- Meter/Second
+- Mile/Hour
+
 ### Temperature (*working on Swift support*)
 
 - Celcius

@@ -21,9 +21,6 @@
      "SwiftTests",
      "ObjCTests"
   ],
-  "frameworks": [
-    "UIKit"
-  ],
   "default_subspecs": "Swift",
   "subspecs": [
     {

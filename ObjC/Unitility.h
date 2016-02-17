@@ -7,5 +7,6 @@
 //
 
 #import "Length.h"
+#import "Speed.h"
 #import "Temperature.h"
 #import "Weight.h"
