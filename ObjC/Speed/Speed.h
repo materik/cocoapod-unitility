@@ -15,9 +15,9 @@
 
 @interface Speed : NSObject
 
-+ (KilometerPerHour *)kilometerPerHour:(CGFloat)kmph;
-+ (Knot *)knot:(CGFloat)kn;
-+ (MeterPerSecond *)meterPerSecond:(CGFloat)mps;
-+ (MilePerHour *)milePerHour:(CGFloat)mph;
++ (KilometerPerHour *)kilometerPerHour:(float)kmph;
++ (Knot *)knot:(float)kn;
++ (MeterPerSecond *)meterPerSecond:(float)mps;
++ (MilePerHour *)milePerHour:(float)mph;
 
 @end

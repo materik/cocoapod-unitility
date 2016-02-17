@@ -15,19 +15,19 @@
 
 @implementation Length
 
-+ (Centimeter *)centimeter:(CGFloat)cm {
++ (Centimeter *)centimeter:(float)cm {
     return [Centimeter value:cm];
 }
 
-+ (Foot *)foot:(CGFloat)ft {
++ (Foot *)foot:(float)ft {
     return [Foot value:ft];
 }
 
-+ (Inch *)inch:(CGFloat)in {
++ (Inch *)inch:(float)in {
     return [Inch value:in];
 }
 
-+ (Meter *)meter:(CGFloat)m {
++ (Meter *)meter:(float)m {
     return [Meter value:m];
 }
 

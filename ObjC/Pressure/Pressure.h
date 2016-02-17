@@ -13,7 +13,7 @@
 
 @interface Pressure : NSObject
 
-+ (Millibar *)millibar:(CGFloat)mbar;
-+ (Pascal *)pascal:(CGFloat)pa;
++ (Millibar *)millibar:(float)mbar;
++ (Pascal *)pascal:(float)pa;
 
 @end

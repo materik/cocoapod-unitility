@@ -10,7 +10,7 @@
 
 @implementation Unit
 
-- (instancetype)initWithValue:(CGFloat)value {
+- (instancetype)initWithValue:(float)value {
     self = [super init];
     if (self) {
         [self setValue:value];
@@ -36,7 +36,7 @@
     return [NSString stringWithFormat:@"%@ %@", value, self.unit];
 }
 
-+ (instancetype)value:(CGFloat)value {
++ (instancetype)value:(float)value {
     return [[[self class] alloc] initWithValue:value];
 }
 

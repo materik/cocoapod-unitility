@@ -15,9 +15,9 @@
 
 @interface Length : NSObject
 
-+ (Centimeter *)centimeter:(CGFloat)cm;
-+ (Foot *)foot:(CGFloat)ft;
-+ (Inch *)inch:(CGFloat)in;
-+ (Meter *)meter:(CGFloat)m;
++ (Centimeter *)centimeter:(float)cm;
++ (Foot *)foot:(float)ft;
++ (Inch *)inch:(float)in;
++ (Meter *)meter:(float)m;
 
 @end

@@ -9,7 +9,7 @@
 #import <Unitility/Speed.h>
 #import <XCTest/XCTest.h>
 
-static CGFloat const kAccuracy = 0.01f;
+static float const kAccuracy = 0.01f;
 
 @interface SpeedTests : XCTestCase
 

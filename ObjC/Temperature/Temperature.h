@@ -14,8 +14,8 @@
 
 @interface Temperature : NSObject
 
-+ (Celcius *)celcius:(CGFloat)c;
-+ (Farenheit *)farenheit:(CGFloat)f;
-+ (Kelvin *)kelvin:(CGFloat)k;
++ (Celcius *)celcius:(float)c;
++ (Farenheit *)farenheit:(float)f;
++ (Kelvin *)kelvin:(float)k;
 
 @end

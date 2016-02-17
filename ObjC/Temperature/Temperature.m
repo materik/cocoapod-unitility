@@ -10,15 +10,15 @@
 
 @implementation Temperature
 
-+ (Celcius *)celcius:(CGFloat)c {
++ (Celcius *)celcius:(float)c {
     return [Celcius value:c];
 }
 
-+ (Farenheit *)farenheit:(CGFloat)f {
++ (Farenheit *)farenheit:(float)f {
     return [Farenheit value:f];
 }
 
-+ (Kelvin *)kelvin:(CGFloat)k {
++ (Kelvin *)kelvin:(float)k {
     return [Kelvin value:k];
 }
 

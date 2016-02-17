@@ -9,7 +9,7 @@
 #import <Unitility/Weight.h>
 #import <XCTest/XCTest.h>
 
-static CGFloat const kAccuracy = 0.01f;
+static float const kAccuracy = 0.01f;
 
 @interface WeightTests : XCTestCase
 

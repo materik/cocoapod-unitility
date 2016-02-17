@@ -10,19 +10,19 @@
 
 @implementation Speed
 
-+ (KilometerPerHour *)kilometerPerHour:(CGFloat)kmph {
++ (KilometerPerHour *)kilometerPerHour:(float)kmph {
     return [KilometerPerHour value:kmph];
 }
 
-+ (Knot *)knot:(CGFloat)kn {
++ (Knot *)knot:(float)kn {
     return [Knot value:kn];
 }
 
-+ (MeterPerSecond *)meterPerSecond:(CGFloat)mps {
++ (MeterPerSecond *)meterPerSecond:(float)mps {
     return [MeterPerSecond value:mps];
 }
 
-+ (MilePerHour *)milePerHour:(CGFloat)mph {
++ (MilePerHour *)milePerHour:(float)mph {
     return [MilePerHour value:mph];
 }
 

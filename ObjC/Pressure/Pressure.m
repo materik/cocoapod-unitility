@@ -10,11 +10,11 @@
 
 @implementation Pressure
 
-+ (Millibar *)millibar:(CGFloat)mbar {
++ (Millibar *)millibar:(float)mbar {
     return [Millibar value:mbar];
 }
 
-+ (Pascal *)pascal:(CGFloat)pa {
++ (Pascal *)pascal:(float)pa {
     return [Pascal value:pa];
 }
 

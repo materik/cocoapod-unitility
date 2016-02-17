@@ -11,7 +11,7 @@
 
 @interface Unit : NSObject
 
-@property(nonatomic, assign) CGFloat value;
+@property(nonatomic, assign) float value;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -19,6 +19,6 @@
 - (NSString *)formatted;
 - (NSString *)formattedWithPrecision:(NSUInteger)precision;
 
-+ (instancetype)value:(CGFloat)value;
++ (instancetype)value:(float)value;
 
 @end

@@ -15,9 +15,9 @@
 
 @interface Weight : NSObject
 
-+ (Gram *)gram:(CGFloat)g;
-+ (Kilogram *)kilogram:(CGFloat)kg;
-+ (Ounce *)ounce:(CGFloat)oz;
-+ (Pound *)pound:(CGFloat)lb;
++ (Gram *)gram:(float)g;
++ (Kilogram *)kilogram:(float)kg;
++ (Ounce *)ounce:(float)oz;
++ (Pound *)pound:(float)lb;
 
 @end

@@ -10,19 +10,19 @@
 
 @implementation Weight
 
-+ (Gram *)gram:(CGFloat)g {
++ (Gram *)gram:(float)g {
     return [Gram value:g];
 }
 
-+ (Kilogram *)kilogram:(CGFloat)kg {
++ (Kilogram *)kilogram:(float)kg {
     return [Kilogram value:kg];
 }
 
-+ (Ounce *)ounce:(CGFloat)oz {
++ (Ounce *)ounce:(float)oz {
     return [Ounce value:oz];
 }
 
-+ (Pound *)pound:(CGFloat)lb {
++ (Pound *)pound:(float)lb {
     return [Pound value:lb];
 }
 
