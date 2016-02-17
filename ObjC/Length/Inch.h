@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "LengthProtocol.h"
+@protocol Length;
 
-@interface Inch : Unit <LengthProtocol>
+@interface Inch : Unit <Length>
 
 @end

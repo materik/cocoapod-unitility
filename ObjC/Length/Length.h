@@ -1,8 +1,8 @@
 //
-//  Length.h
+//  LengthProtocol.h
 //  Pods
 //
-//  Created by materik on 10/02/16.
+//  Created by materik on 15/02/16.
 //
 //
 
@@ -13,11 +13,12 @@
 #import "Inch.h"
 #import "Meter.h"
 
-@interface Length : NSObject
+@protocol Length <NSObject>
 
-+ (Centimeter *)centimeter:(float)cm;
-+ (Foot *)foot:(float)ft;
-+ (Inch *)inch:(float)in;
-+ (Meter *)meter:(float)m;
+@required
+- (Centimeter *)convertToCentimeters;
+- (Foot *)convertToFeet;
+- (Inch *)convertToInches;
+- (Meter *)convertToMeters;
 
 @end

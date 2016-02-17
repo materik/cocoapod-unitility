@@ -16,27 +16,26 @@ static float const kAccuracy = 0.01f;
 #pragma mark - Format
 
 - (void)testFormatCentimeter {
-    XCTAssertEqualObjects([[Length centimeter:2.2] formatted], @"2.20 cm");
     XCTAssertEqualObjects([[Centimeter value:2.2] formatted], @"2.20 cm");
     XCTAssertEqualObjects([[Centimeter value:2.2] formattedLong], @"2.20 centimeters");
 }
 
 - (void)testFormatFeet {
-    XCTAssertEqualObjects([[Length foot:2.2] formatted], @"2.20 ft");
+    XCTAssertEqualObjects([[Foot value:2.2] formatted], @"2.20 ft");
 }
 
 - (void)testFormatInches {
-    XCTAssertEqualObjects([[Length inch:2.2] formatted], @"2.20 in");
+    XCTAssertEqualObjects([[Inch value:2.2] formatted], @"2.20 in");
 }
 
 - (void)testFormatMeter {
-    XCTAssertEqualObjects([[Length meter:2.2] formatted], @"2.20 m");
+    XCTAssertEqualObjects([[Meter value:2.2] formatted], @"2.20 m");
 }
 
 #pragma mark - Convert
 
 - (void)testConvertCentimeterToMeter {
-    Centimeter *cm = [Length centimeter:2.2];
+    Centimeter *cm = [Centimeter value:2.2];
     Meter *m = [cm convertToMeters];
     XCTAssertEqualWithAccuracy(m.value, 0.022, 0.0001f);
     [cm setValue:2200];
@@ -45,7 +44,7 @@ static float const kAccuracy = 0.01f;
 }
 
 - (void)testConvertMeterToCentimeter {
-    Meter *m = [Length meter:2.2];
+    Meter *m = [Meter value:2.2];
     Centimeter *cm = [m convertToCentimeters];
     XCTAssertEqualWithAccuracy(cm.value, 220, 0.0001f);
     [m setValue:2200];

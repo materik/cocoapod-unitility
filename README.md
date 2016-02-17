@@ -40,7 +40,7 @@ print(f.formatted()) // 17.06 ft
 ```objective-c
 #import <Unitility/Length.h>
 
-Meter *m = [Length meter:5.2f];
+Meter *m = [Meter value:5.2f];
 Foot *f = [m convertToFoot];
 NSLog(@"%@", [f formatted]); // 17.06 ft
 ```
