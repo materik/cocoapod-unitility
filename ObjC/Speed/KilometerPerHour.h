@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "SpeedProtocol.h"
+@protocol Speed;
 
-@interface KilometerPerHour : Unit <SpeedProtocol>
+@interface KilometerPerHour : Unit <Speed>
 
 @end

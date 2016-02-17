@@ -20,26 +20,25 @@ static float const kAccuracy = 0.01f;
 #pragma mark - Format
 
 - (void)testFormatKilometerPerHour {
-    XCTAssertEqualObjects([[Speed kilometerPerHour:2.2] formatted], @"2.20 km/h");
     XCTAssertEqualObjects([[KilometerPerHour value:2.2] formatted], @"2.20 km/h");
 }
 
 - (void)testFormatKnot {
-    XCTAssertEqualObjects([[Speed knot:2.2] formatted], @"2.20 kn");
+    XCTAssertEqualObjects([[Knot value:2.2] formatted], @"2.20 kn");
 }
 
 - (void)testFormatMeterPerSecond {
-    XCTAssertEqualObjects([[Speed meterPerSecond:2.2] formatted], @"2.20 m/s");
+    XCTAssertEqualObjects([[MeterPerSecond value:2.2] formatted], @"2.20 m/s");
 }
 
 - (void)testFormatMilePerHour {
-    XCTAssertEqualObjects([[Speed milePerHour:2.2] formatted], @"2.20 mi/h");
+    XCTAssertEqualObjects([[MilePerHour value:2.2] formatted], @"2.20 mi/h");
 }
 
 #pragma mark - Convert
 
 - (void)testConvertKilometerPerHourToKnot {
-    KilometerPerHour *kmph = [Speed kilometerPerHour:2.2];
+    KilometerPerHour *kmph = [KilometerPerHour value:2.2];
     Knot *kn = [kmph convertToKnots];
     XCTAssertEqualWithAccuracy(kn.value, 1.187904968f, kAccuracy);
     [kmph setValue:2200];

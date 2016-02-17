@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "SpeedProtocol.h"
+@protocol Speed;
 
-@interface Knot : Unit <SpeedProtocol>
+@interface Knot : Unit <Speed>
 
 @end

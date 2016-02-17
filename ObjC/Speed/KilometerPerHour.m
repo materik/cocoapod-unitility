@@ -7,6 +7,7 @@
 //
 
 #import "KilometerPerHour.h"
+#import "Speed.h"
 
 #import "Knot.h"
 #import "MeterPerSecond.h"

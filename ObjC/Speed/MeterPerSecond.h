@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "SpeedProtocol.h"
+@protocol Speed;
 
-@interface MeterPerSecond : Unit <SpeedProtocol>
+@interface MeterPerSecond : Unit <Speed>
 
 @end
