@@ -14,7 +14,7 @@
 
 @implementation Inch
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"in";
 }
 

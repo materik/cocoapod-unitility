@@ -14,7 +14,7 @@
 
 @implementation Kilogram
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"kg";
 }
 

@@ -13,7 +13,7 @@
 
 @implementation Celcius
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"°C";
 }
 

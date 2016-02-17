@@ -22,10 +22,6 @@
     return [self formatted];
 }
 
-- (NSString *)unit {
-    return @"";
-}
-
 - (NSString *)formatted {
     return [self formattedWithPrecision:2];
 }
@@ -33,7 +29,15 @@
 - (NSString *)formattedWithPrecision:(NSUInteger)precision {
     NSString *format = [NSString stringWithFormat:@"%%.%ldf", (long)precision];
     NSString *value = [NSString stringWithFormat:format, self.value];
-    return [NSString stringWithFormat:@"%@ %@", value, self.unit];
+    return [NSString stringWithFormat:@"%@ %@", value, self.class.unit];
+}
+
++ (NSString *)unit {
+    return @"";
+}
+
++ (NSString *)unitLong {
+    return @"";
 }
 
 + (instancetype)value:(float)value {

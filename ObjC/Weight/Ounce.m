@@ -14,7 +14,7 @@
 
 @implementation Ounce
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"oz";
 }
 

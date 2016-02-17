@@ -14,7 +14,7 @@
 
 @implementation Gram
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"g";
 }
 

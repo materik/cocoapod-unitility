@@ -14,7 +14,7 @@
 
 @implementation Meter
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"m";
 }
 

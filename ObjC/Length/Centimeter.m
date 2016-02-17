@@ -14,7 +14,7 @@
 
 @implementation Centimeter
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"cm";
 }
 

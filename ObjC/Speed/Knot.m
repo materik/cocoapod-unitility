@@ -14,7 +14,7 @@
 
 @implementation Knot
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"kn";
 }
 

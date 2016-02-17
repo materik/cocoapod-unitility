@@ -12,7 +12,7 @@
 
 @implementation Millibar
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"mbar";
 }
 

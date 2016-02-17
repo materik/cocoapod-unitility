@@ -14,7 +14,7 @@
 
 @implementation MilePerHour
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"mi/h";
 }
 

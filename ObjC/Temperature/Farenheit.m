@@ -13,7 +13,7 @@
 
 @implementation Farenheit
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"°F";
 }
 

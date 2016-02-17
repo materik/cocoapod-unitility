@@ -14,7 +14,7 @@
 
 @implementation KilometerPerHour
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"km/h";
 }
 

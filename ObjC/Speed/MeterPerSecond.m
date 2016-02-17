@@ -14,7 +14,7 @@
 
 @implementation MeterPerSecond
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"m/s";
 }
 

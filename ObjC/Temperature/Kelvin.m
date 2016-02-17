@@ -13,7 +13,7 @@
 
 @implementation Kelvin
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"K";
 }
 

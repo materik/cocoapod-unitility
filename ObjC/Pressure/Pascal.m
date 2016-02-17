@@ -12,7 +12,7 @@
 
 @implementation Pascal
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"Pa";
 }
 

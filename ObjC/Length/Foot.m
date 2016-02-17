@@ -14,7 +14,7 @@
 
 @implementation Foot
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"ft";
 }
 

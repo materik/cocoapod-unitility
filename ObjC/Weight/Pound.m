@@ -14,7 +14,7 @@
 
 @implementation Pound
 
-- (NSString *)unit {
++ (NSString *)unit {
     return @"lb";
 }
 

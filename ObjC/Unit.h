@@ -15,10 +15,11 @@
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (NSString *)unit;
 - (NSString *)formatted;
 - (NSString *)formattedWithPrecision:(NSUInteger)precision;
 
++ (NSString *)unit;
++ (NSString *)unitLong;
 + (instancetype)value:(float)value;
 
 @end
