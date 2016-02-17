@@ -8,8 +8,8 @@
 
 #import "Unit.h"
 
-#import "TemperatureProtocol.h"
+@protocol Temperature;
 
-@interface Celcius : Unit <TemperatureProtocol>
+@interface Celcius : Unit <Temperature>
 
 @end

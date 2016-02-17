@@ -2,7 +2,7 @@
 //  Temperature.h
 //  Pods
 //
-//  Created by materik on 10/02/16.
+//  Created by materik on 16/02/16.
 //
 //
 
@@ -12,10 +12,10 @@
 #import "Farenheit.h"
 #import "Kelvin.h"
 
-@interface Temperature : NSObject
+@protocol Temperature <NSObject>
 
-+ (Celcius *)celcius:(float)c;
-+ (Farenheit *)farenheit:(float)f;
-+ (Kelvin *)kelvin:(float)k;
+- (Celcius *)convertToCelcius;
+- (Farenheit *)convertToFarenheit;
+- (Kelvin *)convertToKelvin;
 
 @end
