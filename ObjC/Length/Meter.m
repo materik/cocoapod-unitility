@@ -18,6 +18,10 @@
     return @"m";
 }
 
++ (NSString *)unitLong {
+    return @"meters";
+}
+
 - (Centimeter *)convertToCentimeters {
     return [Centimeter value:self.value * 100.0f];
 }

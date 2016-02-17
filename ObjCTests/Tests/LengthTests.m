@@ -18,6 +18,7 @@ static float const kAccuracy = 0.01f;
 - (void)testFormatCentimeter {
     XCTAssertEqualObjects([[Length centimeter:2.2] formatted], @"2.20 cm");
     XCTAssertEqualObjects([[Centimeter value:2.2] formatted], @"2.20 cm");
+    XCTAssertEqualObjects([[Centimeter value:2.2] formattedLong], @"2.20 centimeters");
 }
 
 - (void)testFormatFeet {

@@ -18,6 +18,10 @@
     return @"oz";
 }
 
++ (NSString *)unitLong {
+    return @"ounces";
+}
+
 - (Gram *)convertToGrams {
     return [Gram value:self.value * 28.3495f];
 }

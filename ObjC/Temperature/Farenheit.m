@@ -17,6 +17,10 @@
     return @"°F";
 }
 
++ (NSString *)unitLong {
+    return @"°Farenheit";
+}
+
 - (Celcius *)convertToCelcius {
     return [Celcius value:(self.value - 32.0f) * 5.0f / 9.0f];
 }

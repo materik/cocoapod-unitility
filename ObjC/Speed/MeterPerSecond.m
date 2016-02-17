@@ -18,6 +18,10 @@
     return @"m/s";
 }
 
++ (NSString *)unitLong {
+    return @"meters/second";
+}
+
 - (KilometerPerHour *)convertToKilometersPerHour {
     return [KilometerPerHour value:self.value * 3.6f];
 }

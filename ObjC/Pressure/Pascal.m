@@ -16,6 +16,10 @@
     return @"Pa";
 }
 
++ (NSString *)unitLong {
+    return @"Pascals";
+}
+
 - (Millibar *)convertToMillibars {
     return [Millibar value:self.value * 0.01f];
 }

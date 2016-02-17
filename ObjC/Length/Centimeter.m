@@ -18,6 +18,10 @@
     return @"cm";
 }
 
++ (NSString *)unitLong {
+    return @"centimeters";
+}
+
 - (Centimeter *)convertToCentimeters {
     return [Centimeter value:self.value];
 }

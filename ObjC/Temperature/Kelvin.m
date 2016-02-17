@@ -17,6 +17,10 @@
     return @"K";
 }
 
++ (NSString *)unitLong {
+    return @"Kelvin";
+}
+
 - (Celcius *)convertToCelcius {
     return [Celcius value:self.value - 273.15f];
 }

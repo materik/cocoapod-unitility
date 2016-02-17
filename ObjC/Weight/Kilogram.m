@@ -18,6 +18,10 @@
     return @"kg";
 }
 
++ (NSString *)unitLong {
+    return @"kilograms";
+}
+
 - (Gram *)convertToGrams {
     return [Gram value:self.value * 1000.0f];
 }

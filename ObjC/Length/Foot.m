@@ -18,6 +18,10 @@
     return @"ft";
 }
 
++ (NSString *)unitLong {
+    return @"feet";
+}
+
 - (Centimeter *)convertToCentimeters {
     return [Centimeter value:self.value * 30.48f];
 }

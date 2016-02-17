@@ -18,6 +18,10 @@
     return @"kn";
 }
 
++ (NSString *)unitLong {
+    return @"knots";
+}
+
 - (KilometerPerHour *)convertToKilometersPerHour {
     return [KilometerPerHour value:self.value * 1.852f];
 }

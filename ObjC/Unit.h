@@ -16,6 +16,7 @@
 - (instancetype)init NS_UNAVAILABLE;
 
 - (NSString *)formatted;
+- (NSString *)formattedLong;
 - (NSString *)formattedWithPrecision:(NSUInteger)precision;
 
 + (NSString *)unit;

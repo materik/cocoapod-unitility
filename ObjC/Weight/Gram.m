@@ -18,6 +18,10 @@
     return @"g";
 }
 
++ (NSString *)unitLong {
+    return @"grams";
+}
+
 - (Gram *)convertToGrams {
     return [Gram value:self.value];
 }

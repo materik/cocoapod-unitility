@@ -18,6 +18,10 @@
     return @"in";
 }
 
++ (NSString *)unitLong {
+    return @"inces";
+}
+
 - (Centimeter *)convertToCentimeters {
     return [Centimeter value:self.value * 2.54f];
 }

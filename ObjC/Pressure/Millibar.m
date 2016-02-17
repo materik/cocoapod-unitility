@@ -16,6 +16,10 @@
     return @"mbar";
 }
 
++ (NSString *)unitLong {
+    return @"millibar";
+}
+
 - (Millibar *)convertToMillibars {
     return [Millibar value:self.value];
 }

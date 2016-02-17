@@ -17,6 +17,10 @@
     return @"°C";
 }
 
++ (NSString *)unitLong {
+    return @"°Celcius";
+}
+
 - (Celcius *)convertToCelcius {
     return [Celcius value:self.value];
 }

@@ -18,6 +18,10 @@
     return @"lb";
 }
 
++ (NSString *)unitLong {
+    return @"pounds";
+}
+
 - (Gram *)convertToGrams {
     return [Gram value:self.value * 453.592f];
 }
