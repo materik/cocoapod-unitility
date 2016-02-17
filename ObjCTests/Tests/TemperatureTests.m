@@ -21,6 +21,8 @@ static float const kAccuracy = 0.01f;
 
 - (void)testFormatCelcius {
     XCTAssertEqualObjects([[Temperature celcius:2.2] formatted], @"2.20 °C");
+    XCTAssertEqualObjects([[Temperature celcius:2.2] formattedWithFormat:@"%.1f%@"], @"2.2°C");
+    XCTAssertEqualObjects([[Temperature celcius:2.2] formattedWithFormat:@"%.1f%@" longFormat:YES], @"2.2°Celcius");
 }
 
 - (void)testFormatFarenheit {

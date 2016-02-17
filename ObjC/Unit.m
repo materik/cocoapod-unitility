@@ -35,10 +35,17 @@
 }
 
 - (NSString *)formattedWithPrecision:(NSUInteger)precision longFormat:(BOOL)longFormat {
-    NSString *format = [NSString stringWithFormat:@"%%.%ldf", (long)precision];
-    NSString *value = [NSString stringWithFormat:format, self.value];
+    NSString *format = [NSString stringWithFormat:@"%%.%ldf %@", (long)precision, @"%@"];
+    return [self formattedWithFormat:format longFormat:longFormat];
+}
+
+- (NSString *)formattedWithFormat:(NSString *)format {
+    return [self formattedWithFormat:format longFormat:NO];
+}
+
+- (NSString *)formattedWithFormat:(NSString *)format longFormat:(BOOL)longFormat {
     NSString *unit = longFormat ? self.class.unitLong : self.class.unit;
-    return [NSString stringWithFormat:@"%@ %@", value, unit];
+    return [NSString stringWithFormat:format, self.value, unit];
 }
 
 + (NSString *)unit {
