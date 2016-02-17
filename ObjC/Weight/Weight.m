@@ -18,7 +18,11 @@
     return [Kilogram value:kg];
 }
 
-+ (Pound *)Pound:(CGFloat)lb {
++ (Ounce *)ounce:(CGFloat)oz {
+    return [Ounce value:oz];
+}
+
++ (Pound *)pound:(CGFloat)lb {
     return [Pound value:lb];
 }
 

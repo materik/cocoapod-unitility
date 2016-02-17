@@ -10,6 +10,7 @@
 
 #import "Gram.h"
 #import "Kilogram.h"
+#import "Ounce.h"
 
 @implementation Pound
 
@@ -23,6 +24,10 @@
 
 - (Kilogram *)convertToKilogram {
     return [Kilogram value:self.value * 0.453592f];
+}
+
+- (Ounce *)convertToOunce {
+    return [Ounce value:self.value * 16.0f];
 }
 
 - (Pound *)convertToPound {
