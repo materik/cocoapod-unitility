@@ -56,7 +56,10 @@ NSLog(@"%@", [f formatted]); // 17.06 ft
 
 ### Pressure (*working on Swift support*)
 
+- Bar
+- Hectopascal
 - Millibar
+- Millimeter of Mercury
 - Pascal
 
 ### Speed (*working on Swift support*)

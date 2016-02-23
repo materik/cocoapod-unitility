@@ -6,5 +6,8 @@
 //
 //
 
+#import "Bar.h"
+#import "Hectopascal.h"
 #import "Millibar.h"
+#import "MillimeterMercury.h"
 #import "Pascal.h"

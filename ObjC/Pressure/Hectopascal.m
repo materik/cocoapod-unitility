@@ -1,38 +1,38 @@
 //
-//  Millibar.m
+//  Hectopascal.m
+//  Pods
 //
-//
-//  Created by materik on 17/02/16.
+//  Created by materik on 23/02/16.
 //
 //
 
-#import "Millibar.h"
+#import "Hectopascal.h"
 
 #import "Bar.h"
-#import "Hectopascal.h"
+#import "Millibar.h"
 #import "MillimeterMercury.h"
 #import "Pascal.h"
 
-@implementation Millibar
+@implementation Hectopascal
 
 + (NSString *)unit {
-    return @"mbar";
+    return @"hPa";
 }
 
 + (NSString *)unitLong {
-    return @"millibar";
+    return @"hectopascal";
 }
 
 - (Bar *)convertToBars {
-    return [Bar value:self.value * 0.001];
+    return [Bar value:self.value * 0.001f];
 }
 
 - (Hectopascal *)convertToHectopascal {
-    return [Hectopascal value:self.value * 1.0f];
+    return [Hectopascal value:self.value];
 }
 
 - (Millibar *)convertToMillibars {
-    return [Millibar value:self.value];
+    return [Millibar value:self.value * 1.0f];
 }
 
 - (MillimeterMercury *)convertToMillimeterMercury {
