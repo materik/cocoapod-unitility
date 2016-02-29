@@ -36,19 +36,19 @@ static float const kAccuracy = 0.01f;
 
 - (void)testConvertCentimeterToMeter {
     Centimeter *cm = [Centimeter value:2.2];
-    Meter *m = [cm convertToMeters];
+    Meter *m = [cm convertToMeter];
     XCTAssertEqualWithAccuracy(m.value, 0.022, 0.0001f);
     [cm setValue:2200];
-    m = [cm convertToMeters];
+    m = [cm convertToMeter];
     XCTAssertEqualWithAccuracy(m.value, 22, kAccuracy);
 }
 
 - (void)testConvertMeterToCentimeter {
     Meter *m = [Meter value:2.2];
-    Centimeter *cm = [m convertToCentimeters];
+    Centimeter *cm = [m convertToCentimeter];
     XCTAssertEqualWithAccuracy(cm.value, 220, 0.0001f);
     [m setValue:2200];
-    cm = [m convertToCentimeters];
+    cm = [m convertToCentimeter];
     XCTAssertEqualWithAccuracy(cm.value, 220000, kAccuracy);
 }
 

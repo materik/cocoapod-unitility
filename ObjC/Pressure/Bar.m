@@ -10,7 +10,7 @@
 
 #import "Hectopascal.h"
 #import "Millibar.h"
-#import "MillimeterMercury.h"
+#import "MillimeterOfMercury.h"
 #import "Pascal.h"
 
 @implementation Bar
@@ -23,7 +23,7 @@
     return @"Bar";
 }
 
-- (Bar *)convertToBars {
+- (Bar *)convertToBar {
     return [Bar value:self.value];
 }
 
@@ -31,12 +31,12 @@
     return [Hectopascal value:self.value * 1000.0f];
 }
 
-- (Millibar *)convertToMillibars {
+- (Millibar *)convertToMillibar {
     return [Millibar value:self.value * 1000.0f];
 }
 
-- (MillimeterMercury *)convertToMillimeterMercury {
-    return [MillimeterMercury value:self.value * 750.063755419f];
+- (MillimeterOfMercury *)convertToMillimeterOfMercury {
+    return [MillimeterOfMercury value:self.value * 750.063755419f];
 }
 
 - (Pascal *)convertToPascal {

@@ -42,64 +42,64 @@ static float const kAccuracy = 0.01f;
 
 - (void)testConvertGramToKilogram {
     Gram *g = [Gram value:2.2];
-    Kilogram *kg = [g convertToKilograms];
+    Kilogram *kg = [g convertToKilogram];
     XCTAssertEqualWithAccuracy(kg.value, 0.0022, 0.0001f);
     [g setValue:2200];
-    kg = [g convertToKilograms];
+    kg = [g convertToKilogram];
     XCTAssertEqualWithAccuracy(kg.value, 2.2, kAccuracy);
 }
 
 - (void)testConvertGramToPound {
     Gram *g = [Gram value:2.2];
-    Pound *lb = [g convertToPounds];
+    Pound *lb = [g convertToPound];
     XCTAssertEqualWithAccuracy(lb.value, 0.0048, 0.0001f);
     [g setValue:2200];
-    lb = [g convertToPounds];
+    lb = [g convertToPound];
     XCTAssertEqualWithAccuracy(lb.value, 4.85, kAccuracy);
 }
 
 - (void)testConvertKilogramToGram {
     Kilogram *kg = [Kilogram value:2.2];
-    Gram *g = [kg convertToGrams];
+    Gram *g = [kg convertToGram];
     XCTAssertEqualWithAccuracy(g.value, 2200, 1.0f);
     [kg setValue:2200];
-    g = [kg convertToGrams];
+    g = [kg convertToGram];
     XCTAssertEqualWithAccuracy(g.value, 2200000, 1.0f);
 }
 
 - (void)testConvertKilogramToPound {
     Kilogram *kg = [Kilogram value:2.2];
-    Pound *lb = [kg convertToPounds];
+    Pound *lb = [kg convertToPound];
     XCTAssertEqualWithAccuracy(lb.value, 4.85, kAccuracy);
     [kg setValue:2200];
-    lb = [kg convertToPounds];
+    lb = [kg convertToPound];
     XCTAssertEqualWithAccuracy(lb.value, 4850.17, kAccuracy);
 }
 
 - (void)testConvertPoundToKilogram {
     Pound *lb = [Pound value:2.2];
-    Kilogram *kg = [lb convertToKilograms];
+    Kilogram *kg = [lb convertToKilogram];
     XCTAssertEqualWithAccuracy(kg.value, 1.00, kAccuracy);
     [lb setValue:2200];
-    kg = [lb convertToKilograms];
+    kg = [lb convertToKilogram];
     XCTAssertEqualWithAccuracy(kg.value, 997.9, kAccuracy);
 }
 
 - (void)testConvertPoundToGram {
     Pound *lb = [Pound value:2.2];
-    Gram *g = [lb convertToGrams];
+    Gram *g = [lb convertToGram];
     XCTAssertEqualWithAccuracy(g.value, 997.91, kAccuracy);
     [lb setValue:2200];
-    g = [lb convertToGrams];
+    g = [lb convertToGram];
     XCTAssertEqualWithAccuracy(g.value, 997902.43, kAccuracy);
 }
 
 - (void)testConvertPoundToOunce {
     Pound *lb = [Pound value:2.2];
-    Ounce *oz = [lb convertToOunces];
+    Ounce *oz = [lb convertToOunce];
     XCTAssertEqualWithAccuracy(oz.value, 35.2, kAccuracy);
     [lb setValue:2200];
-    oz = [lb convertToOunces];
+    oz = [lb convertToOunce];
     XCTAssertEqualWithAccuracy(oz.value, 35200, kAccuracy);
 }
 

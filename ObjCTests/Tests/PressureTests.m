@@ -31,10 +31,10 @@ static float const kAccuracy = 0.01f;
 
 - (void)testConvertMillibarToPascal {
     Millibar *mbar = [Millibar value:2.2];
-    Pascal *pa = [mbar convertToPascals];
+    Pascal *pa = [mbar convertToPascal];
     XCTAssertEqualWithAccuracy(pa.value, 220, kAccuracy);
     [mbar setValue:2200];
-    pa = [mbar convertToPascals];
+    pa = [mbar convertToPascal];
     XCTAssertEqualWithAccuracy(pa.value, 220000, kAccuracy);
 }
 

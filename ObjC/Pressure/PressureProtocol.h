@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@class Bar, Hectopascal, Millibar, MillimeterMercury, Pascal;
+@class Bar, Hectopascal, Millibar, MillimeterOfMercury, Pascal;
 
 @protocol Pressure <NSObject>
 
 @required
-- (Bar *)convertToBars;
+- (Bar *)convertToBar;
 - (Hectopascal *)convertToHectopascal;
-- (Millibar *)convertToMillibars;
-- (MillimeterMercury *)convertToMillimeterMercury;
+- (Millibar *)convertToMillibar;
+- (MillimeterOfMercury *)convertToMillimeterOfMercury;
 - (Pascal *)convertToPascal;
 
 @end

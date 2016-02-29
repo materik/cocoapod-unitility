@@ -22,19 +22,19 @@
     return @"inces";
 }
 
-- (Centimeter *)convertToCentimeters {
+- (Centimeter *)convertToCentimeter {
     return [Centimeter value:self.value * 2.54f];
 }
 
-- (Foot *)convertToFeet {
+- (Foot *)convertToFoot {
     return [Foot value:self.value * 0.0833333333f];
 }
 
-- (Inch *)convertToInches {
+- (Inch *)convertToInch {
     return [Inch value:self.value];
 }
 
-- (Meter *)convertToMeters {
+- (Meter *)convertToMeter {
     return [Meter value:self.value * 0.0254f];
 }
 

@@ -10,6 +10,6 @@
 
 #import "PressureProtocol.h"
 
-@interface MillimeterMercury : Unit <Pressure>
+@interface MillimeterOfMercury : Unit <Pressure>
 
 @end

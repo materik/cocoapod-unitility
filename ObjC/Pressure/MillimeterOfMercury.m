@@ -6,14 +6,14 @@
 //
 //
 
-#import "MillimeterMercury.h"
+#import "MillimeterOfMercury.h"
 
 #import "Bar.h"
 #import "Hectopascal.h"
 #import "Millibar.h"
 #import "Pascal.h"
 
-@implementation MillimeterMercury
+@implementation MillimeterOfMercury
 
 + (NSString *)unit {
     return @"mmHg";
@@ -23,7 +23,7 @@
     return @"Millimeter of Mercury";
 }
 
-- (Bar *)convertToBars {
+- (Bar *)convertToBar {
     return [Bar value:self.value * 0.00133322f];
 }
 
@@ -31,12 +31,12 @@
     return [Hectopascal value:self.value * 1.33322f];
 }
 
-- (Millibar *)convertToMillibars {
+- (Millibar *)convertToMillibar {
     return [Millibar value:self.value * 1.33322f];
 }
 
-- (MillimeterMercury *)convertToMillimeterMercury {
-    return [MillimeterMercury value:self.value];
+- (MillimeterOfMercury *)convertToMillimeterOfMercury {
+    return [MillimeterOfMercury value:self.value];
 }
 
 - (Pascal *)convertToPascal {

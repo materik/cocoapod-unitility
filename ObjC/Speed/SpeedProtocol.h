@@ -13,9 +13,9 @@
 @protocol Speed <NSObject>
 
 @required
-- (KilometerPerHour *)convertToKilometersPerHour;
-- (Knot *)convertToKnots;
-- (MeterPerSecond *)convertToMetersPerSecond;
-- (MilePerHour *)convertToMilesPerHour;
+- (KilometerPerHour *)convertToKilometerPerHour;
+- (Knot *)convertToKnot;
+- (MeterPerSecond *)convertToMeterPerSecond;
+- (MilePerHour *)convertToMilePerHour;
 
 @end

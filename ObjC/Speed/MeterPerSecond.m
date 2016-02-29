@@ -22,19 +22,19 @@
     return @"meters/second";
 }
 
-- (KilometerPerHour *)convertToKilometersPerHour {
+- (KilometerPerHour *)convertToKilometerPerHour {
     return [KilometerPerHour value:self.value * 3.6f];
 }
 
-- (Knot *)convertToKnots {
+- (Knot *)convertToKnot {
     return [Knot value:self.value * 1.943844492f];
 }
 
-- (MeterPerSecond *)convertToMetersPerSecond {
+- (MeterPerSecond *)convertToMeterPerSecond {
     return [MeterPerSecond value:self.value];
 }
 
-- (MilePerHour *)convertToMilesPerHour {
+- (MilePerHour *)convertToMilePerHour {
     return [MilePerHour value:self.value * 2.236936292f];
 }
 

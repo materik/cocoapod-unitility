@@ -13,9 +13,9 @@
 @protocol Length <NSObject>
 
 @required
-- (Centimeter *)convertToCentimeters;
-- (Foot *)convertToFeet;
-- (Inch *)convertToInches;
-- (Meter *)convertToMeters;
+- (Centimeter *)convertToCentimeter;
+- (Foot *)convertToFoot;
+- (Inch *)convertToInch;
+- (Meter *)convertToMeter;
 
 @end

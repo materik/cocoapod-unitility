@@ -39,10 +39,10 @@ static float const kAccuracy = 0.01f;
 
 - (void)testConvertKilometerPerHourToKnot {
     KilometerPerHour *kmph = [KilometerPerHour value:2.2];
-    Knot *kn = [kmph convertToKnots];
+    Knot *kn = [kmph convertToKnot];
     XCTAssertEqualWithAccuracy(kn.value, 1.187904968f, kAccuracy);
     [kmph setValue:2200];
-    kn = [kmph convertToKnots];
+    kn = [kmph convertToKnot];
     XCTAssertEqualWithAccuracy(kn.value, 1187.904967603f, kAccuracy);
 }
 
